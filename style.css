@@ -33,16 +33,12 @@ body {
     justify-content: space-between;
 }
 
-.right-container {
-    flex: 2;
-}
-
 .logo-box {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 6rem;
+    margin-top: 20vh;
 }
 
 .left.logo-text,
@@ -52,16 +48,47 @@ body {
 }
 
 .logo {
-    width: 7rem;
+    width: 6rem;
 }
 
 .logo-text {
     font-family: "Norse Bold", "Norse", serif;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .left.credits-line {
     text-align: center;
+    font-size: 0.8rem;
     padding-bottom: 1rem;
     opacity: 0.8;
+}
+
+.right-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    height: 100vh;
+}
+
+.right.header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-wrap: inherit;
+    width: 75%;
+    gap: 2rem;
+    padding-top: 10vh;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+form {
+    flex: 2;
 }
