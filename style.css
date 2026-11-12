@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Norse";
+    font-weight: normal;
+    src: url(fonts/Norse.woff2);
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    font-weight: bold;
+    src: url(fonts/Norsebold.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.img-box {
+    flex: 1; 
+    height: 100vh;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-container {
+    flex: 2;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 6rem;
+}
+
+.left.logo-text,
+.left.credits-line,
+.left.credits-line a {
+    color: white;
+}
+
+.logo {
+    width: 7rem;
+}
+
+.logo-text {
+    font-family: "Norse Bold", "Norse", serif;
+    font-size: 5rem;
+}
+
+.left.credits-line {
+    text-align: center;
+    padding-bottom: 1rem;
+    opacity: 0.8;
+}
