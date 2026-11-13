@@ -21,6 +21,7 @@
 
 body {
     display: flex;
+    background-color: #F9FAFB;
 }
 
 .img-box {
@@ -53,7 +54,7 @@ body {
 
 .logo-text {
     font-family: "Norse Bold", "Norse", serif;
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 .left.credits-line {
@@ -68,7 +69,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     height: 100vh;
 }
 
@@ -78,16 +78,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
     text-wrap: inherit;
-    width: 77%;
+    justify-content: center;
+    width: 70%;
     gap: 2rem;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-left: 5%;
 }
 
 p {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .form-container {
@@ -102,6 +103,7 @@ p {
     gap: 2rem;
     border-top: 1px;
     box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.5);
+    background-color:  #FFFFFF;
 }
 
 .input-container {
@@ -114,6 +116,10 @@ p {
     padding: 1rem 0 2rem 5%;
 }
 
+.input-container:last-child {
+    padding-bottom: 5rem;
+}
+
 h2 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -124,13 +130,15 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
-    gap: 2rem;
+    max-width: 80%;
+    gap: 4rem;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
+    width: 40%;
+    height: 1rem;
 }
 
 label {
@@ -142,8 +150,35 @@ label {
 }
 
 input {
-    min-width: 15rem;
+    width: 100%;
     min-height: 2rem;
-    
+    padding-left: 5px;
+    font-size: 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
 }
 
+button {
+    margin-left: 5%;
+    margin-top: 2rem;
+    display: block;
+    min-width: 15vw;
+    min-height: 3rem;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #596D48;
+    border-radius: 10px;
+    border: none;
+}
+
+.login {
+    margin-left: 5%;
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
